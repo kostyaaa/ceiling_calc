@@ -12,7 +12,8 @@ namespace ceilings
 {
     public partial class Ceil_Calc : Form
     {
-        
+        int square = 0;
+        int perim = 0;
         public Ceil_Calc()
         {
             InitializeComponent();
@@ -26,6 +27,12 @@ namespace ceilings
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCount_Click(object sender, EventArgs e)
+        {
+            square = Convert.ToInt32(tbSquare.Text);
+            labelPlita.Text = (Math.Ceiling(square / 0.36)).ToString();
         }
     }
 }

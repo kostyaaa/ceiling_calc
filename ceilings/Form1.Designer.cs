@@ -46,6 +46,15 @@
             this.labelSize = new System.Windows.Forms.Label();
             this.labelSquare = new System.Windows.Forms.Label();
             this.labelPerim = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelPlita = new System.Windows.Forms.Label();
+            this.label3_7 = new System.Windows.Forms.Label();
+            this.label1_2 = new System.Windows.Forms.Label();
+            this.label0_6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpSquareCount.SuspendLayout();
@@ -109,6 +118,15 @@
             // 
             // tpSquareCount
             // 
+            this.tpSquareCount.Controls.Add(this.label9);
+            this.tpSquareCount.Controls.Add(this.label0_6);
+            this.tpSquareCount.Controls.Add(this.label1_2);
+            this.tpSquareCount.Controls.Add(this.label3_7);
+            this.tpSquareCount.Controls.Add(this.labelPlita);
+            this.tpSquareCount.Controls.Add(this.label4);
+            this.tpSquareCount.Controls.Add(this.label3);
+            this.tpSquareCount.Controls.Add(this.label2);
+            this.tpSquareCount.Controls.Add(this.label1);
             this.tpSquareCount.Controls.Add(this.labelPerim);
             this.tpSquareCount.Controls.Add(this.labelSquare);
             this.tpSquareCount.Controls.Add(this.labelSize);
@@ -156,6 +174,7 @@
             this.btnCount.TabIndex = 5;
             this.btnCount.Text = "Рассчитать";
             this.btnCount.UseVisualStyleBackColor = true;
+            this.btnCount.Click += new System.EventHandler(this.btnCount_Click);
             // 
             // tbSquare
             // 
@@ -214,6 +233,88 @@
             this.labelPerim.TabIndex = 11;
             this.labelPerim.Text = "Введите периметр";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(37, 136);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Плита потолочная";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(37, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "3,7";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(37, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(22, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "1,2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(37, 187);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(22, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "0,6";
+            // 
+            // labelPlita
+            // 
+            this.labelPlita.AutoSize = true;
+            this.labelPlita.Location = new System.Drawing.Point(146, 136);
+            this.labelPlita.Name = "labelPlita";
+            this.labelPlita.Size = new System.Drawing.Size(13, 13);
+            this.labelPlita.TabIndex = 16;
+            this.labelPlita.Text = "0";
+            // 
+            // label3_7
+            // 
+            this.label3_7.AutoSize = true;
+            this.label3_7.Location = new System.Drawing.Point(146, 153);
+            this.label3_7.Name = "label3_7";
+            this.label3_7.Size = new System.Drawing.Size(13, 13);
+            this.label3_7.TabIndex = 17;
+            this.label3_7.Text = "0";
+            // 
+            // label1_2
+            // 
+            this.label1_2.AutoSize = true;
+            this.label1_2.Location = new System.Drawing.Point(146, 170);
+            this.label1_2.Name = "label1_2";
+            this.label1_2.Size = new System.Drawing.Size(13, 13);
+            this.label1_2.TabIndex = 18;
+            this.label1_2.Text = "0";
+            // 
+            // label0_6
+            // 
+            this.label0_6.AutoSize = true;
+            this.label0_6.Location = new System.Drawing.Point(146, 183);
+            this.label0_6.Name = "label0_6";
+            this.label0_6.Size = new System.Drawing.Size(13, 13);
+            this.label0_6.TabIndex = 19;
+            this.label0_6.Text = "0";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(34, 106);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(201, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Необходимое количество материалов";
+            // 
             // Ceil_Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,6 +354,15 @@
         private System.Windows.Forms.Label labelSize;
         private System.Windows.Forms.Label labelPerim;
         private System.Windows.Forms.Label labelSquare;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label0_6;
+        private System.Windows.Forms.Label label1_2;
+        private System.Windows.Forms.Label label3_7;
+        private System.Windows.Forms.Label labelPlita;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
