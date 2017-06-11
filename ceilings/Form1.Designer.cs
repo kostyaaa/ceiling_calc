@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 495);
             this.Name = "Ceil_Calc";
-            this.Text = "Калькулятор потолка";
+            this.Text = "Калькулятор потолка ver 0.1";
             this.ResumeLayout(false);
 
         }
