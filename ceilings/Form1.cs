@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ceilings
 {
-    public partial class Form1 : Form
+    public partial class Ceil_Calc : Form
     {
-        public Form1()
+        public Ceil_Calc()
         {
             InitializeComponent();
         }
