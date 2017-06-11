@@ -40,6 +40,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox_S = new System.Windows.Forms.TextBox();
             this.textBox_P = new System.Windows.Forms.TextBox();
+            this.tbPerimeter = new System.Windows.Forms.TextBox();
+            this.tbSquare = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -103,6 +105,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.tbSquare);
+            this.tabPage1.Controls.Add(this.tbPerimeter);
             this.tabPage1.Controls.Add(this.textBox_P);
             this.tabPage1.Controls.Add(this.textBox_S);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -138,13 +142,33 @@
             // textBox_P
             // 
             this.textBox_P.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_P.Location = new System.Drawing.Point(384, 21);
+            this.textBox_P.Location = new System.Drawing.Point(328, 21);
             this.textBox_P.Multiline = true;
             this.textBox_P.Name = "textBox_P";
-            this.textBox_P.Size = new System.Drawing.Size(106, 40);
+            this.textBox_P.Size = new System.Drawing.Size(106, 38);
             this.textBox_P.TabIndex = 1;
             this.textBox_P.Text = "Введите периметр";
             this.textBox_P.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbPerimeter
+            // 
+            this.tbPerimeter.Location = new System.Drawing.Point(517, 23);
+            this.tbPerimeter.Multiline = true;
+            this.tbPerimeter.Name = "tbPerimeter";
+            this.tbPerimeter.Size = new System.Drawing.Size(87, 27);
+            this.tbPerimeter.TabIndex = 3;
+            this.tbPerimeter.Text = "0";
+            this.tbPerimeter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbSquare
+            // 
+            this.tbSquare.Location = new System.Drawing.Point(171, 23);
+            this.tbSquare.Multiline = true;
+            this.tbSquare.Name = "tbSquare";
+            this.tbSquare.Size = new System.Drawing.Size(100, 27);
+            this.tbSquare.TabIndex = 4;
+            this.tbSquare.Text = "0";
+            this.tbSquare.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Ceil_Calc
             // 
@@ -179,6 +203,8 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox textBox_P;
         private System.Windows.Forms.TextBox textBox_S;
+        private System.Windows.Forms.TextBox tbSquare;
+        private System.Windows.Forms.TextBox tbPerimeter;
     }
 }
 
