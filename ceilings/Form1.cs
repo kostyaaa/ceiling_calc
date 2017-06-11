@@ -12,6 +12,7 @@ namespace ceilings
 {
     public partial class Ceil_Calc : Form
     {
+        
         public Ceil_Calc()
         {
             InitializeComponent();
@@ -20,6 +21,11 @@ namespace ceilings
         private void tsmiExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
