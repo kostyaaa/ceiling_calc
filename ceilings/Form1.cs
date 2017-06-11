@@ -12,6 +12,7 @@ namespace ceilings
 {
     public partial class Ceil_Calc : Form
     {
+        
         public Ceil_Calc()
         {
             InitializeComponent();
