@@ -91,7 +91,8 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Ceil_Calc";
-            this.Text = "Калькулятор потолка";
+
+            this.Text = "Калькулятор потолка ver 0.1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
