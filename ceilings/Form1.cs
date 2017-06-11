@@ -32,7 +32,14 @@ namespace ceilings
         private void btnCount_Click(object sender, EventArgs e)
         {
             square = Convert.ToInt32(tbSquare.Text);
+            perim = Convert.ToInt32(tbPerimeter.Text);
+
             labelPlita.Text = (Math.Ceiling(square / 0.36)).ToString();
+            label3_7.Text = (Math.Ceiling(square * 0.25)).ToString();
+            label1_2.Text = (Math.Ceiling(square * 1.39)).ToString();
+            label0_6.Text = (Math.Ceiling(square * 1.39)).ToString();
+            labelAngle.Text = (Math.Ceiling(perim * 0.34)).ToString();
+            labelPodves.Text = (Math.Ceiling(square * 0.83)).ToString();
         }
     }
 }
