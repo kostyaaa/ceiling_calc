@@ -41,5 +41,21 @@ namespace ceilings
             labelAngle.Text = (Math.Ceiling(perim * 0.34)).ToString();
             labelPodves.Text = (Math.Ceiling(square * 0.83)).ToString();
         }
+
+        private void tbSquare_KeyPress(object sender, KeyPressEventArgs e)
+        { //проверка, чтобы в поле ввода площади вводились только цифры
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(8))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPerimeter_KeyPress(object sender, KeyPressEventArgs e)
+        {  //проверка, чтобы в поле ввода периметра вводились только цифры
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(8))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

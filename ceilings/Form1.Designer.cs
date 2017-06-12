@@ -52,16 +52,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelPerim = new System.Windows.Forms.Label();
             this.labelSquare = new System.Windows.Forms.Label();
-            this.labelSize = new System.Windows.Forms.Label();
             this.radioButton1200 = new System.Windows.Forms.RadioButton();
             this.radioButtonSize600 = new System.Windows.Forms.RadioButton();
             this.btnCount = new System.Windows.Forms.Button();
             this.tbSquare = new System.Windows.Forms.TextBox();
             this.tbPerimeter = new System.Windows.Forms.TextBox();
             this.tpProductFinder = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpSquareCount.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -122,6 +123,7 @@
             // 
             // tpSquareCount
             // 
+            this.tpSquareCount.Controls.Add(this.groupBox1);
             this.tpSquareCount.Controls.Add(this.labelPodves);
             this.tpSquareCount.Controls.Add(this.labelAngle);
             this.tpSquareCount.Controls.Add(this.label6);
@@ -137,9 +139,6 @@
             this.tpSquareCount.Controls.Add(this.label1);
             this.tpSquareCount.Controls.Add(this.labelPerim);
             this.tpSquareCount.Controls.Add(this.labelSquare);
-            this.tpSquareCount.Controls.Add(this.labelSize);
-            this.tpSquareCount.Controls.Add(this.radioButton1200);
-            this.tpSquareCount.Controls.Add(this.radioButtonSize600);
             this.tpSquareCount.Controls.Add(this.btnCount);
             this.tpSquareCount.Controls.Add(this.tbSquare);
             this.tpSquareCount.Controls.Add(this.tbPerimeter);
@@ -191,7 +190,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(34, 106);
+            this.label9.Location = new System.Drawing.Point(37, 106);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(201, 13);
             this.label9.TabIndex = 20;
@@ -282,25 +281,16 @@
             // labelSquare
             // 
             this.labelSquare.AutoSize = true;
-            this.labelSquare.Location = new System.Drawing.Point(34, 63);
+            this.labelSquare.Location = new System.Drawing.Point(37, 71);
             this.labelSquare.Name = "labelSquare";
             this.labelSquare.Size = new System.Drawing.Size(97, 13);
             this.labelSquare.TabIndex = 10;
             this.labelSquare.Text = "Введите площадь";
             // 
-            // labelSize
-            // 
-            this.labelSize.AutoSize = true;
-            this.labelSize.Location = new System.Drawing.Point(34, 22);
-            this.labelSize.Name = "labelSize";
-            this.labelSize.Size = new System.Drawing.Size(80, 13);
-            this.labelSize.TabIndex = 9;
-            this.labelSize.Text = "Размер плиты";
-            // 
             // radioButton1200
             // 
             this.radioButton1200.AutoSize = true;
-            this.radioButton1200.Location = new System.Drawing.Point(234, 20);
+            this.radioButton1200.Location = new System.Drawing.Point(98, 19);
             this.radioButton1200.Name = "radioButton1200";
             this.radioButton1200.Size = new System.Drawing.Size(71, 17);
             this.radioButton1200.TabIndex = 7;
@@ -311,7 +301,7 @@
             // radioButtonSize600
             // 
             this.radioButtonSize600.AutoSize = true;
-            this.radioButtonSize600.Location = new System.Drawing.Point(149, 20);
+            this.radioButtonSize600.Location = new System.Drawing.Point(6, 19);
             this.radioButtonSize600.Name = "radioButtonSize600";
             this.radioButtonSize600.Size = new System.Drawing.Size(65, 17);
             this.radioButtonSize600.TabIndex = 6;
@@ -338,6 +328,7 @@
             this.tbSquare.TabIndex = 4;
             this.tbSquare.Text = "0";
             this.tbSquare.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbSquare.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSquare_KeyPress);
             // 
             // tbPerimeter
             // 
@@ -348,6 +339,7 @@
             this.tbPerimeter.TabIndex = 3;
             this.tbPerimeter.Text = "0";
             this.tbPerimeter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPerimeter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPerimeter_KeyPress);
             // 
             // tpProductFinder
             // 
@@ -358,6 +350,17 @@
             this.tpProductFinder.TabIndex = 1;
             this.tpProductFinder.Text = "Подбор продукта";
             this.tpProductFinder.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButtonSize600);
+            this.groupBox1.Controls.Add(this.radioButton1200);
+            this.groupBox1.Location = new System.Drawing.Point(40, 9);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(186, 48);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Выберите размер плиты";
             // 
             // Ceil_Calc
             // 
@@ -374,6 +377,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tpSquareCount.ResumeLayout(false);
             this.tpSquareCount.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,7 +400,6 @@
         private System.Windows.Forms.Button btnCount;
         private System.Windows.Forms.RadioButton radioButton1200;
         private System.Windows.Forms.RadioButton radioButtonSize600;
-        private System.Windows.Forms.Label labelSize;
         private System.Windows.Forms.Label labelPerim;
         private System.Windows.Forms.Label labelSquare;
         private System.Windows.Forms.Label label9;
@@ -411,6 +415,7 @@
         private System.Windows.Forms.Label labelAngle;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
