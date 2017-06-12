@@ -12,7 +12,8 @@ namespace ceilings
 {
     public partial class Ceil_Calc : Form
     {
-        
+        int square = 0;
+        int perim = 0;
         public Ceil_Calc()
         {
             InitializeComponent();
@@ -26,6 +27,35 @@ namespace ceilings
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCount_Click(object sender, EventArgs e)
+        {
+            square = Convert.ToInt32(tbSquare.Text);
+            perim = Convert.ToInt32(tbPerimeter.Text);
+
+            labelPlita.Text = (Math.Ceiling(square / 0.36)).ToString();
+            label3_7.Text = (Math.Ceiling(square * 0.25)).ToString();
+            label1_2.Text = (Math.Ceiling(square * 1.39)).ToString();
+            label0_6.Text = (Math.Ceiling(square * 1.39)).ToString();
+            labelAngle.Text = (Math.Ceiling(perim * 0.34)).ToString();
+            labelPodves.Text = (Math.Ceiling(square * 0.83)).ToString();
+        }
+
+        private void tbSquare_KeyPress(object sender, KeyPressEventArgs e)
+        { //проверка, чтобы в поле ввода площади вводились только цифры
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(8))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPerimeter_KeyPress(object sender, KeyPressEventArgs e)
+        {  //проверка, чтобы в поле ввода периметра вводились только цифры
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != Convert.ToChar(8))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
