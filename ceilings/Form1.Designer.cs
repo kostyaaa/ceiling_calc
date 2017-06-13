@@ -37,6 +37,9 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpSquareCount = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButtonSize600 = new System.Windows.Forms.RadioButton();
+            this.radioButton1200 = new System.Windows.Forms.RadioButton();
             this.labelPodves = new System.Windows.Forms.Label();
             this.labelAngle = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,13 +55,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelPerim = new System.Windows.Forms.Label();
             this.labelSquare = new System.Windows.Forms.Label();
-            this.radioButton1200 = new System.Windows.Forms.RadioButton();
-            this.radioButtonSize600 = new System.Windows.Forms.RadioButton();
             this.btnCount = new System.Windows.Forms.Button();
             this.tbSquare = new System.Windows.Forms.TextBox();
             this.tbPerimeter = new System.Windows.Forms.TextBox();
             this.tpProductFinder = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpSquareCount.SuspendLayout();
@@ -150,6 +150,39 @@
             this.tpSquareCount.Text = "Расчет по площади";
             this.tpSquareCount.UseVisualStyleBackColor = true;
             this.tpSquareCount.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButtonSize600);
+            this.groupBox1.Controls.Add(this.radioButton1200);
+            this.groupBox1.Location = new System.Drawing.Point(40, 9);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(186, 48);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Выберите размер плиты";
+            // 
+            // radioButtonSize600
+            // 
+            this.radioButtonSize600.AutoSize = true;
+            this.radioButtonSize600.Checked = true;
+            this.radioButtonSize600.Location = new System.Drawing.Point(6, 19);
+            this.radioButtonSize600.Name = "radioButtonSize600";
+            this.radioButtonSize600.Size = new System.Drawing.Size(65, 17);
+            this.radioButtonSize600.TabIndex = 6;
+            this.radioButtonSize600.TabStop = true;
+            this.radioButtonSize600.Text = "600*600";
+            this.radioButtonSize600.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1200
+            // 
+            this.radioButton1200.AutoSize = true;
+            this.radioButton1200.Location = new System.Drawing.Point(98, 19);
+            this.radioButton1200.Name = "radioButton1200";
+            this.radioButton1200.Size = new System.Drawing.Size(71, 17);
+            this.radioButton1200.TabIndex = 7;
+            this.radioButton1200.Text = "1200*600";
+            this.radioButton1200.UseVisualStyleBackColor = true;
             // 
             // labelPodves
             // 
@@ -287,28 +320,6 @@
             this.labelSquare.TabIndex = 10;
             this.labelSquare.Text = "Введите площадь";
             // 
-            // radioButton1200
-            // 
-            this.radioButton1200.AutoSize = true;
-            this.radioButton1200.Location = new System.Drawing.Point(98, 19);
-            this.radioButton1200.Name = "radioButton1200";
-            this.radioButton1200.Size = new System.Drawing.Size(71, 17);
-            this.radioButton1200.TabIndex = 7;
-            this.radioButton1200.TabStop = true;
-            this.radioButton1200.Text = "1200*600";
-            this.radioButton1200.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonSize600
-            // 
-            this.radioButtonSize600.AutoSize = true;
-            this.radioButtonSize600.Location = new System.Drawing.Point(6, 19);
-            this.radioButtonSize600.Name = "radioButtonSize600";
-            this.radioButtonSize600.Size = new System.Drawing.Size(65, 17);
-            this.radioButtonSize600.TabIndex = 6;
-            this.radioButtonSize600.TabStop = true;
-            this.radioButtonSize600.Text = "600*600";
-            this.radioButtonSize600.UseVisualStyleBackColor = true;
-            // 
             // btnCount
             // 
             this.btnCount.Location = new System.Drawing.Point(479, 63);
@@ -350,17 +361,6 @@
             this.tpProductFinder.TabIndex = 1;
             this.tpProductFinder.Text = "Подбор продукта";
             this.tpProductFinder.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButtonSize600);
-            this.groupBox1.Controls.Add(this.radioButton1200);
-            this.groupBox1.Location = new System.Drawing.Point(40, 9);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(186, 48);
-            this.groupBox1.TabIndex = 25;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Выберите размер плиты";
             // 
             // Ceil_Calc
             // 
